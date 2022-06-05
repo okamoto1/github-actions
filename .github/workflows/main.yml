@@ -44,7 +44,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Deploying staging
-        run: STAGING deployed!
+        run: echo STAGING deployed!
         
   deploy-production:
     needs: build 
@@ -56,4 +56,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Deploying production
-        run: PRD deployed!
+        run: echo PRD deployed!
