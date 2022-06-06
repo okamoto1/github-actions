@@ -41,9 +41,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: Deploying staging wb
+        run: echo STAGING deployed!
+      
+      - name: Deploying staging palmeira
+        run: echo STAGING deployed!
 
       # Runs a single command using the runners shell
-      - name: Deploying staging
+      - name: End deployment staging
         run: echo STAGING deployed!
         
   deploy-production:
